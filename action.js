@@ -16,8 +16,8 @@ const addComment = (text, userName) =>
     },
     id: uuis.v4()
   };
-const boundAddComment = (text, userName) =>
-dispatch(addComment());
+
+const boundAddComment = (text, userName) => dispatch(addComment());
 
 const removeComment = id =>
   return {
@@ -26,8 +26,8 @@ const removeComment = id =>
       id
     }
   };
-const boundRemoveComment = (id) =>
-dispatch(removeComment());
+
+const boundRemoveComment = (id) => dispatch(removeComment());
 
 const editComment = (text, id) =>
   return {
@@ -37,8 +37,8 @@ const editComment = (text, id) =>
       id
     }
   };
-const boundEditComment = (text, id) =>
-dispatch(editComment());
+
+const boundEditComment = (text, id) => dispatch(editComment());
 
 const thumbUp = id =>
   return {
@@ -47,8 +47,8 @@ const thumbUp = id =>
       id
     }
   };
-const boundThumbUp = (id) =>
-dispatch(thumbUp());
+
+const boundThumbUp = (id) => dispatch(thumbUp());
 
 const thumbDown = id =>
   return {
@@ -57,5 +57,5 @@ const thumbDown = id =>
       id
     }
   };
-const boundThumbDown = (id) =>
-dispatch(thumbDown());
+
+const boundThumbDown = (id) => dispatch(thumbDown());
